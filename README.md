@@ -1,3 +1,7 @@
 # softwareScaffolding
 The golang  software of scaffolding
-##  dodo 
+##   Development Plan
+|   List   |   date    |   state  |
+|------|:--------:|-------|
+|   sfdfs |  sfsdfs    | sdfsdfsd   |
+
