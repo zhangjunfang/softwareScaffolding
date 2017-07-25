@@ -1,13 +1,13 @@
 package main
 
 import (
-	"github.com/zhangjunfang/softwareScaffolding/vender/conf"
-	"github.com/zhangjunfang/softwareScaffolding/vender/controller"
-	"github.com/zhangjunfang/softwareScaffolding/vender/lib"
-	"github.com/zhangjunfang/softwareScaffolding/vender/model"
-	"github.com/zhangjunfang/softwareScaffolding/vender/router"
-	"github.com/zhangjunfang/softwareScaffolding/vender/utils"
-	"github.com/zhangjunfang/softwareScaffolding/vender/view"
+	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/conf"
+	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/controller"
+	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/lib"
+	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/model"
+	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/router"
+	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/utils"
+	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/view"
 
 	"github.com/astaxie/beego/logs"
 	"github.com/astaxie/beego/orm"
