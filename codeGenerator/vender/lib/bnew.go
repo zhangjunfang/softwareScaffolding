@@ -6,7 +6,7 @@ import (
 )
 
 // CreateApp ...
-// @desc 创建项目
+// @desc create project
 func CreateApp() bool {
 	cmd := exec.Command("bee", "new", HeadToUpper(GetDBName()))
 	cmd.Start()

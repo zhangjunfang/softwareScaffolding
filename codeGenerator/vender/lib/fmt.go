@@ -5,7 +5,7 @@ import (
 )
 
 // GoFmt ...
-// @desc 代码格式化
+// @desc Code formatting
 func GoFmt(filename string) {
 	cmd := exec.Command("go", "fmt", filename)
 	cmd.Start()

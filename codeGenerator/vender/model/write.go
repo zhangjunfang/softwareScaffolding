@@ -1,12 +1,12 @@
 package model
 
 import (
-	"BeegoCURD/vender/lib"
 	"fmt"
 	"os"
 	"strings"
 
 	"github.com/astaxie/beego/logs"
+	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/lib"
 )
 
 func Write() {

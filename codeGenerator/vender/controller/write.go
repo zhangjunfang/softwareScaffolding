@@ -1,13 +1,12 @@
 package controller
 
 import (
-	"BeegoCURD/vender/lib"
 	"fmt"
+	"os"
 	"strings"
 
-	"os"
-
 	"github.com/astaxie/beego/logs"
+	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/lib"
 )
 
 func Write() {
@@ -115,7 +114,7 @@ func C(tablename string) string {
 	func (c *%sController) Create() {
 		var m models.%sModel
 
-		// Post 表单提交
+		// Post form submit
 		if c.Ctx.Input.IsPost() {
 			%s
 			num, err := models.Create%s(&m)
@@ -152,7 +151,7 @@ func U(tablename string) string {
 			id = v.Name
 			break
 		} else {
-			logs.Error(tablename + ":主键丢失")
+			logs.Error(tablename + ":The primary key lost")
 			os.Exit(-1)
 		}
 	}
@@ -162,7 +161,7 @@ func U(tablename string) string {
 
 		id, _ := c.GetInt("%s")
 
-		// Post 表单提交
+		// Post form submit
 		if c.Ctx.Input.IsPost() {
 			var m models.%sModel
 			%s
@@ -201,7 +200,7 @@ func R(tablename string) string {
 			id = v.Name
 			break
 		} else {
-			logs.Error(tablename + ":主键丢失")
+			logs.Error(tablename + ":The primary key lost")
 			os.Exit(-1)
 		}
 	}
@@ -236,7 +235,7 @@ func D(tablename string) string {
 			id = v.Name
 			break
 		} else {
-			logs.Error(tablename + ":主键丢失")
+			logs.Error(tablename + ":The primary key lost")
 			os.Exit(-1)
 		}
 	}

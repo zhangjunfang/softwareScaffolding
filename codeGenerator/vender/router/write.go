@@ -1,8 +1,9 @@
 package router
 
 import (
-	"BeegoCURD/vender/lib"
 	"os"
+
+	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/lib"
 
 	"fmt"
 

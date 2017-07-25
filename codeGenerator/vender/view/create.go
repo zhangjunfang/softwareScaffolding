@@ -1,10 +1,10 @@
 package view
 
 import (
-	"BeegoCURD/vender/lib"
 	"os"
 
 	"github.com/astaxie/beego/logs"
+	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/lib"
 )
 
 func Create() {

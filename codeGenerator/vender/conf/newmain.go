@@ -1,13 +1,11 @@
 package conf
 
 import (
-	"BeegoCURD/vender/lib"
-
+	"fmt"
 	"os"
 
-	"fmt"
-
 	"github.com/astaxie/beego/logs"
+	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/lib"
 )
 
 func Newmain() {

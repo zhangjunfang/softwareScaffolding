@@ -1,6 +1,9 @@
 package main
 
 import (
+	"github.com/astaxie/beego/logs"
+	"github.com/astaxie/beego/orm"
+	_ "github.com/go-sql-driver/mysql"
 	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/conf"
 	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/controller"
 	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/lib"
@@ -8,10 +11,6 @@ import (
 	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/router"
 	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/utils"
 	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/view"
-
-	"github.com/astaxie/beego/logs"
-	"github.com/astaxie/beego/orm"
-	_ "github.com/go-sql-driver/mysql"
 )
 
 func init() {
@@ -33,8 +32,8 @@ func main() {
 		utils.Create()
 		utils.Write()
 	} else {
-		logs.Error("项目创建失败")
+		logs.Error("Project creation fails")
 	}
 }
 
-// go run github.com/zhangjunfang/softwareScaffolding.go -conn="root:lione520520@tcp(127.0.0.1:3306)/lione_blog"
+// go run github.com/zhangjunfang/softwareScaffolding/crud.go -conn="root:20170725@tcp(127.0.0.1:3306)/onlinebbs"

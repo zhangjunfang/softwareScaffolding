@@ -9,7 +9,7 @@ type Table struct {
 
 // GetAllTables ...
 // @return []slice
-// @desc 获取数据库中所有表名
+// @desc Gets all the table names in the database
 func GetAllTables() []Table {
 	var tablenames []Table
 	o := orm.NewOrm()

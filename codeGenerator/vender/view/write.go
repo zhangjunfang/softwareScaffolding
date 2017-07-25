@@ -1,11 +1,11 @@
 package view
 
 import (
-	"BeegoCURD/vender/lib"
 	"fmt"
 	"os"
 
 	"github.com/astaxie/beego/logs"
+	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/lib"
 )
 
 func Write() {
@@ -161,7 +161,7 @@ func I(tablename string) {
 			id = v.Name
 			break
 		} else {
-			logs.Error(tablename + ":主键丢失")
+			logs.Error(tablename + ":The primary key lost")
 			os.Exit(-1)
 		}
 	}

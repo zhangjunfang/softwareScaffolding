@@ -1,12 +1,11 @@
 package conf
 
 import (
-	"BeegoCURD/vender/lib"
+	"fmt"
 	"os"
 
-	"fmt"
-
 	"github.com/astaxie/beego/logs"
+	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/lib"
 )
 
 func Write() {
@@ -30,14 +29,14 @@ func Write() {
 	func (c *MainController) Get() {
 		// Data
 		var tpl utils.Tpl
-		tpl.Title = "BeegoCURD"
+		tpl.Title = "OceanCURD"
 		tpl.Success = c.GetSession("success")
 		tpl.Danger = c.GetSession("danger")
 		c.DelSession("success")
 		c.DelSession("danger")
 		c.Data["Tpl"] = tpl
 		c.Data["Website"] = "beego.me"
-		c.Data["Email"] = "astaxie@gmail.com"
+		c.Data["Email"] = "zhangjunfang0505@163.com"
 		c.Layout = "public/tpl.html"
 		c.TplName = "index.tpl"
 	}

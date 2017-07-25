@@ -13,7 +13,7 @@ type Field struct {
 
 // GetAllFields ...
 // @return []slice
-// @desc 获取表中所有表名
+// @desc Gets all the field names in the table
 func GetAllFields(tablename string) []Field {
 	var fields []Field
 	o := orm.NewOrm()
