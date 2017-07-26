@@ -3,9 +3,8 @@ package conf
 import (
 	"os"
 
-	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/lib"
-
 	"github.com/astaxie/beego/logs"
+	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/lib"
 )
 
 // AddSessionOn ...

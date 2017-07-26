@@ -1,13 +1,11 @@
 package router
 
 import (
+	"fmt"
 	"os"
 
-	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/lib"
-
-	"fmt"
-
 	"github.com/astaxie/beego/logs"
+	"github.com/zhangjunfang/softwareScaffolding/codeGenerator/vender/lib"
 )
 
 func Write() {
@@ -30,7 +28,7 @@ func Import() string {
 			"%s/controllers"
 			"github.com/astaxie/beego"
 		)
-	`, lib.HeadToUpper(lib.GetDBName()))
+	`, lib.URL+lib.HeadToUpper(lib.GetDBName()))
 }
 
 func Init() string {

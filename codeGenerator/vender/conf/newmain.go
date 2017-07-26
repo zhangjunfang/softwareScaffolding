@@ -33,7 +33,7 @@ func Newmain() {
 		func main() {
 			beego.Run()
 		}
-		`, lib.HeadToUpper(lib.GetDBName()), lib.GetDBUrl()))
+		`, lib.URL+lib.HeadToUpper(lib.GetDBName()), lib.GetDBUrl()))
 	f.Close()
 	lib.GoFmt(lib.Src() + lib.HeadToUpper(lib.GetDBName()) + "/main.go")
 }

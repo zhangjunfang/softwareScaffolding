@@ -40,6 +40,7 @@ func main() {
 }
 ```
 ##  Code run and parameter format
-go run github.com/zhangjunfang/softwareScaffolding/crud.go -conn="root:20170725@tcp(127.0.0.1:3306)/onlinebbs" 
+go run github.com/zhangjunfang/softwareScaffolding/crud.go -conn="root:20170725@tcp(127.0.0.1:3306)/onlinebbs"  -URL="github.com"
 1.parameter specification：
   1.1 conn：Golang links to the URL of the mysql database
+  1.2 URL :  git repository url 

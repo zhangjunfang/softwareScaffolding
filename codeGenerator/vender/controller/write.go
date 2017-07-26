@@ -23,7 +23,7 @@ func Write() {
 }
 
 func Package() string {
-	return "package controllers\n"
+	return "package %s/controllers\n"
 }
 
 func Import() string {
@@ -33,7 +33,7 @@ func Import() string {
         "%s/utils"
 	    "strconv"
 	    "github.com/astaxie/beego"
-	)`, lib.HeadToUpper(lib.GetDBName()), lib.HeadToUpper(lib.GetDBName()))
+	)`, lib.URL+lib.HeadToUpper(lib.GetDBName()), lib.URL+lib.HeadToUpper(lib.GetDBName()))
 }
 
 func Struct(tablename string) string {

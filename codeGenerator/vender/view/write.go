@@ -93,7 +93,7 @@ func R(tablename string) {
 			id = v.Name
 			break
 		} else {
-			logs.Error(tablename + ":主键丢失")
+			logs.Error(tablename + ":The primary key lost")
 			os.Exit(-1)
 		}
 	}

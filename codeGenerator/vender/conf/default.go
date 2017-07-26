@@ -18,7 +18,7 @@ func Write() {
 	package controllers
 
 	import (
-		"Pj/utils"
+		"%s/utils"
 		"github.com/astaxie/beego"
 	)
 
@@ -40,7 +40,7 @@ func Write() {
 		c.Layout = "public/tpl.html"
 		c.TplName = "index.tpl"
 	}
-	`))
+	`), lib.URL+lib.HeadToUpper(lib.GetDBName()))
 	f.Close()
 	lib.GoFmt(lib.Src() + lib.HeadToUpper(lib.GetDBName()) + "/controllers/default.go")
 }

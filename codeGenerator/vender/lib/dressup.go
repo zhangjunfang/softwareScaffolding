@@ -1,9 +1,8 @@
 package lib
 
 import (
-	"strings"
-
 	"os"
+	"strings"
 
 	"github.com/astaxie/beego/logs"
 )

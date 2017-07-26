@@ -3,7 +3,6 @@ package lib
 import (
 	"os"
 	"regexp"
-
 	"strings"
 
 	"github.com/astaxie/beego/logs"
@@ -14,7 +13,7 @@ import (
 // @desc 验证无误返回
 func GetDBName() string {
 	// 参数个数判断
-	if len(os.Args) != 2 {
+	if len(os.Args) >= 2 {
 		logs.Error("参数输入不当")
 		os.Exit(1)
 	}

@@ -18,6 +18,7 @@ func init() {
 }
 
 func main() {
+
 	if lib.CreateApp() {
 		router.Write()
 		conf.AddSessionOn()
@@ -36,4 +37,4 @@ func main() {
 	}
 }
 
-// go run github.com/zhangjunfang/softwareScaffolding/crud.go -conn="root:20170725@tcp(127.0.0.1:3306)/onlinebbs"
+// go run github.com/zhangjunfang/softwareScaffolding/crud.go -conn="root:20170725@tcp(127.0.0.1:3306)/onlinebbs"  -URL="github.com"
